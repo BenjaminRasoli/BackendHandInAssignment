@@ -12,7 +12,7 @@ namespace Data.Tests.Repositories_Tests
         public async Task AddAsync_ShouldAddProjectAndReturnProject()
         {
             var context = DataContextSeeder.GetDataContext();
-            await DataContextSeeder.SeedWithProjectsAsync(context);
+            await DataContextSeeder.SeedAsync(context);
             IProjectRepository projectRepository = new ProjectRepository(context);
 
 
